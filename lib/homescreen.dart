@@ -25,7 +25,7 @@ class homescreen extends ConsumerWidget {
       'RUB',
       'SGD',
       'THB',
-      'ZAR'
+      'ZAR',
     ];
 
     return Scaffold(
@@ -38,7 +38,8 @@ class homescreen extends ConsumerWidget {
         centerTitle: true,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding:
+            const EdgeInsets.only(top: 100, left: 16, right: 16, bottom: 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -71,7 +72,8 @@ class homescreen extends ConsumerWidget {
                     decoration: const InputDecoration(
                       labelText: 'From',
                       labelStyle: TextStyle(fontSize: 16, color: Colors.teal),
-                      border: OutlineInputBorder(),
+                      border: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.teal)),
                     ),
                   ),
                 ),
@@ -94,7 +96,8 @@ class homescreen extends ConsumerWidget {
                     decoration: const InputDecoration(
                       labelText: 'To',
                       labelStyle: TextStyle(fontSize: 16, color: Colors.teal),
-                      border: OutlineInputBorder(),
+                      border: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.teal)),
                     ),
                   ),
                 ),
