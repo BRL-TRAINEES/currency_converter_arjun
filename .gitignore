@@ -31,6 +31,9 @@ migrate_working_dir/
 .pub/
 /build/
 
+# Add .env to ignore list
+.env
+
 # Symbolication related
 app.*.symbols
 
